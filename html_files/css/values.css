@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #bdc3c7;
+}
+
+th, td {
+    padding: 8px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+thead th {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ecf0f1;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Scrollbar for Webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #884cb9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1c7a92;
+}

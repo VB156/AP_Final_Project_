@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background-color: transparent;">
+    <form action="/upload" method="post" enctype="multipart/form-data" target="graphFrame">
+        <div class="file-upload-container">
+            <label for="file" class="file-upload-label">Choose File</label>
+            <input type="file" name="file" id="file" required>
+            <span id="file-name">No file chosen</span>
+        </div>
+        <button type="submit">Deploy</button>
+    </form>
+    <form action="/publish" method="get" target="valuesFrame">
+        <label for="topic">Topic name:</label>
+        <select name="topic" id="topic" required>
+            <option value="" disabled selected>-- Select a Topic --</option>
+        </select>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        const fileInput = document.getElementById('file');
+        const fileNameSpan = document.getElementById('file-name');
+        fileInput.addEventListener('change', function() {
+            if (this.files.length > 0) {
+                fileNameSpan.textContent = this.files[0].name;
+            } else {
+                fileNameSpan.textContent = 'No file chosen';
+            }
+        });
+    </script>
+</body>
+</html>

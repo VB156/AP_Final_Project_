@@ -1,0 +1,62 @@
+body {
+    background-color: transparent;
+    margin: 0;
+}
+.link {
+    stroke: white;
+    stroke-width: 2px;
+    stroke-opacity: 2;
+    stroke-dasharray: 5, 5;
+}
+.node circle {
+    stroke: black;
+    stroke-width: 1px;
+}
+.node rect {
+    stroke: black;
+    stroke-width: 1px;
+}
+.topic {
+    fill: #884cb9;
+    stroke: #884cb9;
+    stroke-width: 2px;
+    rx: 8px;
+    ry: 8px;
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.topic:hover {
+    fill: #884cb9;
+    transform: scale(1.05);
+}
+
+.topic-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    fill: white;
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.agent {
+    r: 45px;
+    fill: #1c7a92;
+    stroke: #1c7a92;
+    stroke-width: 2px;
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.agent:hover {
+    fill: #1c7a92;
+    transform: scale(1.05);
+}
+
+.agent-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    fill: white;
+    text-anchor: middle;
+    pointer-events: none;
+}
