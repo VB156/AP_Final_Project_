@@ -34,6 +34,7 @@ public class TopicManagerSingleton {
         }
 
         public void clear() {
+            System.out.println("TopicManager: Clearing all topics!");
             topics.clear();
         }
     }

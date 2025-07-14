@@ -34,6 +34,16 @@
                 fileNameSpan.textContent = 'No file chosen';
             }
         });
+
+        // Reload valuesFrame after config upload
+        const uploadForm = document.querySelector('form[action="/upload"]');
+        uploadForm.addEventListener('submit', function() {
+            setTimeout(function() {
+                if (window.parent && window.parent.document.getElementById('valuesFrame')) {
+                    window.parent.document.getElementById('valuesFrame').contentWindow.location.reload();
+                }
+            }, 2000); // 2 seconds
+        });
     </script>
 </body>
 </html>

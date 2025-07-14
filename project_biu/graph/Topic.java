@@ -30,10 +30,12 @@ public class Topic {
             throw new IllegalArgumentException("Invalid topic name: " + topicName);
         }
 
+        System.out.println("Topic created: " + topicName);
         this.m_topicName = topicName;
         m_listSubscribers = new HashSet<Agent>();
         m_listPublishers = new HashSet<Agent>();
     }
+    
 
 //------------------------------------------------------------------------------------------------------------------
 // Public Methods:
